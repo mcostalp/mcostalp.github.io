@@ -9,9 +9,13 @@ export default function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 sd:py-5 sd:block">
             <a href="javascript:void(0)">
-              <div
-                className={`text-5xl font-bold background-${"public/images/favicon.png"}`}
-              />
+              <div className="bg-primary rounded-full">
+                <img
+                  className="max-h-14 p-1"
+                  src="src/assets/transparent-logo.png"
+                  alt="Logo"
+                />
+              </div>
             </a>
             <div className="sd:hidden">
               <button
