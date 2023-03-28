@@ -8,19 +8,19 @@ import Contacts from "./pages/Contacts";
 
 function App() {
   return (
-    <div id="app">
+    <div className="max-w-5xl flex flex-col p-10">
       <Navbar />
-      <div id="content">
-        {/* <Home />
-      <Projects />
-      <Skills />
-      <Contacts /> */}
-        <Routes>
+      <div className="">
+        <Home />
+        <Projects />
+        <Skills />
+        <Contacts />
+        {/* <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/skills" element={<Skills />} />
           <Route path="/contacts" element={<Contacts />} />
-        </Routes>
+        </Routes> */}
       </div>
     </div>
   );
