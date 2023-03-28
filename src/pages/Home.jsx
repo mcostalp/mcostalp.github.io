@@ -1,5 +1,6 @@
 import React from "react";
 import { motion as m } from "framer-motion";
+import heroImg from "../assets/SXJD8621.JPG";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <p className="text-right text-8xl">&#128075;</p>
       <div className="flex flex-wrap items-center mt-80">
         <div className="basis-1/2 p-8">
-          <img src="src/assets/SXJD8621.JPG" alt="Hero Image" />
+          <img src={heroImg} alt="Hero Image" />
         </div>
         <div className="basis-1/2">
           <span className="text-6xl">{"<>"}</span>

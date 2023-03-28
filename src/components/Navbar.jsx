@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/transparent-logo.png";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -10,11 +11,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 sd:py-5 sd:block">
             <a href="javascript:void(0)">
               <div className="bg-primary rounded-full">
-                <img
-                  className="max-h-14 p-1"
-                  src="src/assets/transparent-logo.png"
-                  alt="Logo"
-                />
+                <img className="max-h-14 p-1" src={logo} alt="Logo" />
               </div>
             </a>
             <div className="sd:hidden">
