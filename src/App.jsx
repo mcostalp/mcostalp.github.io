@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { motion as m } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contacts from "./pages/Contacts";
+import { faArrowAltCircleUp } from "@fortawesome/free-regular-svg-icons";
 
 function App() {
   const [visible, setVisible] = useState(false);
@@ -44,10 +46,13 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="bg-secondary p-5 w-24 fixed bottom-5 right-5 rounded-full flex justify-center"
+          className="fixed bottom-12 left-1/2 rounded-full flex justify-center"
         >
           <button onClick={btnClick} className="text-6xl cursor-pointer">
-            &#11014;
+            <FontAwesomeIcon
+              icon={faArrowAltCircleUp}
+              className="text-secondary"
+            />
           </button>
         </m.div>
       ) : (
