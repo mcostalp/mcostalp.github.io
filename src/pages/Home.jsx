@@ -1,6 +1,6 @@
 import React from "react";
 import { motion as m } from "framer-motion";
-import heroImg from "../../public/images/SXJD8621.JPG";
+import heroImg from "../../public/images/hero.png";
 
 export default function Home() {
   return (
