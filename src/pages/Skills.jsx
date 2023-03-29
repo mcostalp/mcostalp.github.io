@@ -12,7 +12,11 @@ export default function Skills() {
     >
       <h1 className="text-right text-9xl mb-16">Habilidades:</h1>
       <div className="text-4xl">
-        <div className="flex flex-row-reverse items-center">
+        <a
+          href="https://www.credential.net/364c946b-e09b-46e4-a76c-395fa8bbb705#gs.tup7f1"
+          target="_blank"
+          className="flex flex-row-reverse items-center"
+        >
           <div>
             <img
               src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69972975"
@@ -33,8 +37,12 @@ export default function Skills() {
               <li>Agile</li>
             </ul>
           </div>
-        </div>
-        <div className="flex items-center border-secondary border-y-2 mb-5">
+        </a>
+        <a
+          href="https://www.credential.net/0d75bf8a-46bb-43f3-9e3f-601cb78af493#gs.tup9s4"
+          target="_blank"
+          className="flex items-center border-y-2 border-solid border-secondary mb-6"
+        >
           <div>
             <img
               src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69972630"
@@ -55,8 +63,12 @@ export default function Skills() {
               <li>Agile and soft skills</li>
             </ul>
           </div>
-        </div>
-        <div className="flex flex-row-reverse items-center">
+        </a>
+        <a
+          href="https://www.credential.net/907203fe-d7a3-4f33-a9ed-299a3acb570d#gs.tuowgt"
+          target="_blank"
+          className="flex flex-row-reverse items-center"
+        >
           <div>
             <img
               src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/70405706"
@@ -81,7 +93,7 @@ export default function Skills() {
               <li>Concepts of CI/CD, VPS</li>
             </ul>
           </div>
-        </div>
+        </a>
         {/* <div>
           <img
             src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69972630"
