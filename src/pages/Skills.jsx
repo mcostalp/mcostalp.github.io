@@ -10,7 +10,7 @@ export default function Skills() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75, ease: "easeOut" }}
     >
-      <h1 className="h1_right">Certificados de habilidades:</h1>
+      <h1 className="text-right text-9xl mb-16">Habilidades:</h1>
       <div className="text-4xl">
         <div className="flex flex-row-reverse items-center">
           <div>
@@ -34,7 +34,7 @@ export default function Skills() {
             </ul>
           </div>
         </div>
-        <div className="flex items-center border-white border-y-2">
+        <div className="flex items-center border-secondary border-y-2 mb-5">
           <div>
             <img
               src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69972630"

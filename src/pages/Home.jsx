@@ -5,7 +5,8 @@ import heroImg from "../../public/images/hero.png";
 export default function Home() {
   return (
     <m.section
-      className="mt-80"
+      id="home"
+      className="mt-80 md:mt-60"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75, ease: "easeOut" }}

@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
+import { motion as m } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -7,6 +7,23 @@ import Skills from "./pages/Skills";
 import Contacts from "./pages/Contacts";
 
 function App() {
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+
+  const btnClick = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
+  window.addEventListener("scroll", toggleVisible);
   return (
     <div className="max-w-5xl flex flex-col p-10">
       <Navbar />
@@ -22,6 +39,20 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
         </Routes> */}
       </div>
+      {visible ? (
+        <m.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="bg-secondary p-5 w-24 fixed bottom-5 right-5 rounded-full flex justify-center"
+        >
+          <button onClick={btnClick} className="text-6xl cursor-pointer">
+            &#11014;
+          </button>
+        </m.div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

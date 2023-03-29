@@ -5,7 +5,7 @@ import logo from "../../public/images/transparent-logo.png";
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="w-full bg-secondary text-white text-5xl">
+    <nav className="w-full bg-secondary text-white text-5xl rounded-xl">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl sd:items-center sd:flex sd:px-8">
         <div>
           <div className="flex items-center justify-between py-3 sd:py-5 sd:block">
@@ -60,16 +60,13 @@ export default function Navbar() {
           >
             <ul className="items-center text-5xl justify-center space-y-8 sd:flex sd:space-x-6 sd:space-y-0">
               <li className="text-white hover:text-primary">
-                <a href="#contacts">Home</a>
+                <a href="#projects">Projetos</a>
               </li>
               <li className="text-white hover:text-primary">
-                <a href="javascript:void(0)">Blog</a>
+                <a href="#skills">Habilidades</a>
               </li>
               <li className="text-white hover:text-primary">
-                <a href="javascript:void(0)">About US</a>
-              </li>
-              <li className="text-white hover:text-primary">
-                <a href="javascript:void(0)">Contact US</a>
+                <a href="#contacts">Contatos</a>
               </li>
             </ul>
           </div>

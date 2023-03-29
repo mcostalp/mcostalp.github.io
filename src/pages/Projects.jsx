@@ -11,7 +11,7 @@ export default function Projects() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75, ease: "easeOut" }}
     >
-      <h1 className="text-right text-9xl">Projetos:</h1>
+      <h1 className="text-right text-9xl mb-16">Projetos:</h1>
       <div>
         <ProjectCard />
       </div>
