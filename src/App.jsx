@@ -46,12 +46,12 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="fixed bottom-12 left-1/2 rounded-full flex justify-center"
+          className="bg-secondary p-2 fixed bottom-12 left-1/2 rounded-full flex justify-center"
         >
-          <button onClick={btnClick} className="text-6xl cursor-pointer">
+          <button onClick={btnClick} className="text-8xl cursor-pointer flex">
             <FontAwesomeIcon
               icon={faArrowAltCircleUp}
-              className="text-secondary"
+              className="text-primary"
             />
           </button>
         </m.div>
