@@ -46,11 +46,11 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="fixed bottom-14 min-w-full m-0 p-0 left-1/2 transform -translate-x-1/2 flex justify-center"
+          className="fixed bottom-14 min-w-full m-0 p-0 left-1/2 transform -translate-x-1/2 flex justify-center lg:bottom-3"
         >
           <button
             onClick={btnClick}
-            className="bg-secondary text-9xl cursor-pointer flex rounded-full"
+            className="bg-secondary text-9xl cursor-pointer flex rounded-full lg:text-3xl"
           >
             <FontAwesomeIcon
               icon={faArrowAltCircleUp}

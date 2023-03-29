@@ -10,7 +10,7 @@ export default function Skills() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.75, ease: "easeOut" }}
     >
-      <h1 className="text-right text-9xl mb-16">Habilidades:</h1>
+      <h1 className="text-right text-9xl mb-16 lg:text-7xl">Habilidades:</h1>
       <div className="text-4xl">
         <a
           href="https://www.credential.net/364c946b-e09b-46e4-a76c-395fa8bbb705#gs.tup7f1"

@@ -17,13 +17,13 @@ export default function Home() {
         <div className="basis-1/2 p-8">
           <img src={heroImg} alt="Hero Image" />
         </div>
-        <div className="basis-1/2">
-          <span className="text-6xl">{"<>"}</span>
-          <p className="text-6xl text-secondary">Desenvolvedor</p>
-          <p className="text-6xl">
+        <div className="basis-1/2 text-6xl lg:text-5xl">
+          <span className="">{"<>"}</span>
+          <p className=" text-secondary">Desenvolvedor</p>
+          <p className="">
             Apaixonado por tecnologia e sempre em busca de novos desafios.
           </p>
-          <span className="text-6xl">{"</>"}</span>
+          <span className="">{"</>"}</span>
         </div>
       </div>
     </m.section>

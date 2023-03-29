@@ -6,15 +6,19 @@ export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
     <nav className="w-full bg-secondary text-white text-5xl rounded-xl">
-      <div className="justify-between px-4 mx-auto lg:max-w-7xl sd:items-center sd:flex sd:px-8">
+      <div className="justify-between px-4 mx-auto lg:max-w-7xl lg:items-center lg:flex lg:px-8">
         <div>
-          <div className="flex items-center justify-between py-3 sd:py-5 sd:block">
+          <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
             <a href="javascript:void(0)">
               <div className="bg-primary rounded-full">
-                <img className="max-h-14 p-1" src={logo} alt="Logo" />
+                <img
+                  className="max-h-14 lg:max-h-10 p-1"
+                  src={logo}
+                  alt="Logo"
+                />
               </div>
             </a>
-            <div className="sd:hidden">
+            <div className="lg:hidden">
               <button
                 className="p-2 text-white rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
@@ -54,11 +58,11 @@ export default function Navbar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 sd:block sd:pb-0 sd:mt-0 ${
+            className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center text-5xl justify-center space-y-8 sd:flex sd:space-x-6 sd:space-y-0">
+            <ul className="items-center text-5xl lg:text-4xl justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
               <li className="text-white hover:text-primary">
                 <a href="#projects">Projetos</a>
               </li>
